@@ -10,7 +10,7 @@
 
 ## Introduction
 
-This document provides step-by-step instruction on how to launch the tests with Allure and Playwright.
+This document provides step-by-step instructions on launching the tests with Allure and Playwright.
 
 ## Prerequisites
 
@@ -32,7 +32,7 @@ To get started with Python and Playwright, follow these steps:
 
 1. Clone or download this repository.
 2. Open a terminal and navigate to the project directory.
-3. Create and activate isolated environment by running following commands
+3. Create and activate an isolated environment by running the following commands
 ```shell
 python3 -m venv venv
 ```
@@ -51,17 +51,17 @@ pip3 install -r requirements.txt
 
 ## Running Tests
 
-1. Running tests using Playwright in headless mode
+Running tests using Playwright in headless mode
 
 ```shell
 python3 -m pytest -s tests --screenshot on --verbose
 ```
 
-1. Running tests using Playwright in headed mode
+Running tests using Playwright in headed mode
 ```shell
 python3 -m pytest -s tests --screenshot on --verbose --headed
 ```
-1. Running tests in headed mode & specific browser(chromium,firefox)
+Running tests in headed mode & specific browser(chromium,firefox)
 
 ```shell
 python3 -m pytest -s tests --browser firefox  --screenshot on --verbose --headed
@@ -69,7 +69,7 @@ python3 -m pytest -s tests --browser firefox  --screenshot on --verbose --headed
 
 
 ## Allure Report
-In order to generate HTML report using Allure reporting framework run tests with `--alluredir` parameter
+To generate HTML report using Allure reporting framework run tests with `--alluredir` parameter
 
 ```shell
 python3 -m pytest -s --alluredir=allure-results tests --numprocesses auto --browser chromium --browser firefox  --screenshot on --video on --headed --verbose
