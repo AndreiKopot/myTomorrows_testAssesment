@@ -1,0 +1,14 @@
+# Ignore venv folder
+venv/
+
+# Ignore pytest_cache folder
+.pytest_cache/
+
+# Other typical exclusions
+.idea/
+
+# Ignore allure results folder
+allure-results/
+
+# Ignore playwright screenshots and video folder
+test-results
