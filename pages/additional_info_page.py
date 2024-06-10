@@ -7,7 +7,6 @@ class AdditionalInfoPage(Helpers):
 
     def __init__(self, page: Page) -> None:
         super().__init__(page)
-        # self.page = page
 
     def fill_in_the_form(self, tab: Page) -> None:
         hcp = self.hcp_random()

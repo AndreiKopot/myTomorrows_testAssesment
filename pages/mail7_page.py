@@ -5,7 +5,6 @@ from utilities.helpers import Helpers
 
 class Mail7Page(Helpers):
 
-
     def __init__(self, page: Page) -> None:
         super().__init__(page)
 
@@ -29,8 +28,6 @@ class Mail7Page(Helpers):
         self.page.click(
             '.subject:has-text("Welcome to myTomorrows!")'
         )
-
-
 
     def click_activate_account_btn(self) -> Page:
 

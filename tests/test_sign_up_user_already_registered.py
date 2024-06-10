@@ -21,7 +21,6 @@ def test_sign_up_user_already_registered(
         choose_pw_page: ChoosePwPage,
         additional_info_page: AdditionalInfoPage) -> None:
 
-    email = helpers.email_random()
     start_page.start_creating_account()
     helpers.create_screenshot("Sign up page")
 
